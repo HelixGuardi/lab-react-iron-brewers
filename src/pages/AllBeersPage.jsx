@@ -22,6 +22,10 @@ function AllBeersPage() {
       // console.log(response);
       setBeers(response.data)
     })
+    .catch((error) => {
+      console.log(error);
+    })
+
   }, [])
 
 
